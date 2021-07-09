@@ -10,7 +10,10 @@
     },
     "suffix": ".bs.js",
     "bs-dependencies": [
+      "reason-react"
     ],
+    "namespace": true,
+    "refmt": 3,
     "warnings": {
       "error" : "+101"
     },
