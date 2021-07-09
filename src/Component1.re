@@ -11,6 +11,7 @@ let handleClick = (_event, _self) => Js.log("clicked!");
    `<Page message="hello" />`
    Which desugars to
    `ReasonReact.element(Page.make(~message="hello", [||]))` */
+
 let make = (~message, _children) => {
   ...component,
   render: self =>

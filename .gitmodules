@@ -1,0 +1,3 @@
+[submodule "deps/ECC-OCaml"]
+	path = deps/ECC-OCaml
+	url = git@github.com:nickgian/ECC-OCaml.git

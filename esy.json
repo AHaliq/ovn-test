@@ -2,6 +2,8 @@
   "name": "melange-project",
   "dependencies": {
     "@opam/ocaml-lsp-server": "*",
+    "@opam/sha": "1.14",
+    "@opam/zarith": "1.12",
     "melange": "melange-re/melange",
     "ocaml": "4.12.x"
   },
