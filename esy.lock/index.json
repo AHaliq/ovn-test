@@ -1,5 +1,5 @@
 {
-  "checksum": "2ea9c6bffddd6f933702d300d80636cc",
+  "checksum": "981335be8a947de2e21be3135cecde04",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@4.12.0@d41d8cd9": {
@@ -25,7 +25,7 @@
       "dependencies": [
         "ocaml@4.12.0@d41d8cd9",
         "melange@github:melange-re/melange#0987f1d582822dfe747095e586ec9878c83510ad@d41d8cd9",
-        "@opam/zarith@opam:1.12@232cc7f2", "@opam/sha@opam:1.14@1b2eef01",
+        "@opam/sha@opam:1.14@1b2eef01",
         "@opam/ocaml-lsp-server@opam:1.7.0@2cdbe0ed"
       ],
       "devDependencies": [],
@@ -53,53 +53,6 @@
       ],
       "devDependencies": [],
       "installConfig": { "pnp": false }
-    },
-    "esy-gmp@archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2@d3dc108f": {
-      "id":
-        "esy-gmp@archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2@d3dc108f",
-      "name": "esy-gmp",
-      "version":
-        "archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2"
-        ]
-      },
-      "overrides": [ "esy.lock/overrides/d3dc108f8f9f64699d29c9c180f20b50" ],
-      "dependencies": [],
-      "devDependencies": []
-    },
-    "@opam/zarith@opam:1.12@232cc7f2": {
-      "id": "@opam/zarith@opam:1.12@232cc7f2",
-      "name": "@opam/zarith",
-      "version": "opam:1.12",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/md5/bf/bf368f3d9e20b6b446d54681afc05a04#md5:bf368f3d9e20b6b446d54681afc05a04",
-          "archive:https://github.com/ocaml/Zarith/archive/release-1.12.tar.gz#md5:bf368f3d9e20b6b446d54681afc05a04"
-        ],
-        "opam": {
-          "name": "zarith",
-          "version": "1.12",
-          "path": "esy.lock/opam/zarith.1.12"
-        }
-      },
-      "overrides": [
-        {
-          "opamoverride":
-            "esy.lock/overrides/opam__s__zarith_opam__c__1.12_opam_override"
-        }
-      ],
-      "dependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.1@b748edf6",
-        "@opam/conf-gmp@opam:3@a623586f", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.1@b748edf6",
-        "@opam/conf-gmp@opam:3@a623586f"
-      ]
     },
     "@opam/yojson@opam:1.7.0@69d87312": {
       "id": "@opam/yojson@opam:1.7.0@69d87312",
@@ -810,31 +763,6 @@
         "ocaml@4.12.0@d41d8cd9", "@opam/dune@opam:2.9.0@489e77a9",
         "@opam/base-unix@opam:base@87d0b2eb"
       ]
-    },
-    "@opam/conf-gmp@opam:3@a623586f": {
-      "id": "@opam/conf-gmp@opam:3@a623586f",
-      "name": "@opam/conf-gmp",
-      "version": "opam:3",
-      "source": {
-        "type": "install",
-        "source": [ "no-source:" ],
-        "opam": {
-          "name": "conf-gmp",
-          "version": "3",
-          "path": "esy.lock/opam/conf-gmp.3"
-        }
-      },
-      "overrides": [
-        {
-          "opamoverride":
-            "esy.lock/overrides/opam__s__conf_gmp_opam__c__3_opam_override"
-        }
-      ],
-      "dependencies": [
-        "esy-gmp@archive:https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz#sha1:0578d48607ec0e272177d175fd1807c30b00fdf2@d3dc108f",
-        "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": []
     },
     "@opam/cmdliner@opam:1.0.4@93208aac": {
       "id": "@opam/cmdliner@opam:1.0.4@93208aac",

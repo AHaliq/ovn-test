@@ -1,3 +1,6 @@
 [submodule "deps/ECC-OCaml"]
 	path = deps/ECC-OCaml
 	url = git@github.com:nickgian/ECC-OCaml.git
+[submodule "deps/ocaml-sha"]
+	path = deps/ocaml-sha
+	url = git@github.com:djs55/ocaml-sha.git
