@@ -4,7 +4,6 @@
     "crypto-browserify": "^3.12.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "reason-react": "0.9.1",
     "rescript-js": "^0.5.15",
     "simple-js-ec-math": "^2.0.1"
   },
