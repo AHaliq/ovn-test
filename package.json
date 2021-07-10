@@ -15,10 +15,11 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "deps": "npm i && rm -f node_modules/reason-react/src/*.bs.js && rm -f node_modules/reason-react/src/legacy/*.bs.js && esy",
+    "deps": "npm i --production false && rm -f node_modules/reason-react/src/*.bs.js && rm -f node_modules/reason-react/src/legacy/*.bs.js && esy",
     "build": "esy build && webpack",
-    "start:reason": "bsb -make-world -w",
+    "start:re": "esy dune build --watch",
     "start:webpack": "webpack -w",
+    "server": "webpack serve",
     "clean": "rm -rf dune dune.bsb .merlin lib .melange.eobjs _build _esy node_modules build",
     "cb": "npm run clean && npm run deps && npm run build"
   }
