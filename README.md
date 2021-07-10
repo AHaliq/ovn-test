@@ -1,6 +1,9 @@
-# melange-basic-template
+# open vote network - client
 
-A simple project template using [Melange](https://github.com/melange-re/melange).
+Based on the project template [Melange](https://github.com/melange-re/melange).
+
+A client for an anonymous voting smart contract running on the zilliqa blockchain
+based on the [contract on solidity](https://github.com/stonecoldpat/anonymousvoting).
 
 ## Getting started
 
@@ -9,7 +12,7 @@ You will need [esy](https://esy.sh) package manager to obtain OCaml and Melange 
 Once `esy` is available, run
 
 ```bash
-esy
+npm run deps
 ```
 
 to install all dependencies.
@@ -17,18 +20,9 @@ to install all dependencies.
 Then:
 
 ```bash
-esy build
+npm run build
 ```
 
-to build the project. This command, as constructed in `esy.json`,
+to build the project. 
 
-1. generates a symbolically linked dir `bs-platform` in `node_modules`, which is helpful when using JavaScript bundlers like Webpack that expect to find Melange stdlib JavaScript files under `node_modules/bs-platform`.
-2. builds the project.
-
-Now you should see a `_build` folder with all generated files, you can run
-
-```bash
-esy x node _build/default/src/Main.bs.js
-```
-
-to see the result of the script running.
+Now you should see a `build` folder with all generated files
