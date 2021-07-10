@@ -3,5 +3,18 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "reason-react": "^0.9.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "deps": "npm i && rm node_modules/reason-react/src/*.bs.js && rm node_modules/reason-react/src/legacy/*.bs.js && esy",
+    "build": "esy build && webpack",
+    "start:reason": "bsb -make-world -w",
+    "start:webpack": "(webpack -w)",
+    "clean": "rm -rf dune dune.bsb .merlin lib .melange.eobjs _build _esy node_modules build"
   }
 }

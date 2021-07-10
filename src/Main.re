@@ -1,3 +1,7 @@
 Js.log("Hello world");
+Js.log("another");
 
-ReactDOMRe.renderToElementWithId(<Component1 message="Hello!" />, "app");
+switch (ReactDOM.querySelector("#root")) {
+| Some(root) => ReactDOM.render(<Greeting name="ASD" />, root)
+| None => Js.log("cant find #root")
+}
