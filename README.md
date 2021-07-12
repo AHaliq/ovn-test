@@ -23,15 +23,19 @@ Then:
 npm run build
 ```
 
-To run hotreloading you will need to tabs
+To run hotreloading on a development server
 ```
-npm run start:re
-#in another tab
-npm run server
-#or the following to just watch without using a dev server
-npm run start:webpack
+npm run hot
 ```
 
-to build the project. 
+To run hotreloading without development server
+```
+npm run start
+```
+
+Processes will run in background for either `hot` or `start`, to end them issue the command
+```
+npm run stop
+```
 
 Now you should see a `build` folder with all generated files

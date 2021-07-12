@@ -18,6 +18,11 @@
     "build": "esy build && webpack",
     "start:re": "esy dune build --watch",
     "start:webpack": "webpack -w",
+    "start": "npm run start:re & npm run start:webpack &",
+    "hot": "npm run start:re & npm run server &",
+    "stop:webpack": "kill -2 \"$(ps | grep 'webpack' | grep -v 'grep' | grep -v 'npm' | sed 's/\\([0-9]*\\).*/\\1/')\"",
+    "stop:re": "kill -2 \"$(ps | grep '.esy' | grep -v 'grep' | grep -v 'fswatch' | grep -v 'node_modules' | sed 's/\\([0-9]*\\).*/\\1/')\"",
+    "stop": "npm run stop:webpack & npm run stop:re",
     "server": "webpack serve",
     "clean": "rm -rf dune dune.bsb .merlin lib .melange.eobjs _build _esy node_modules build",
     "cb": "npm run clean && npm run deps && npm run build"
